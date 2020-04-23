@@ -1,0 +1,48 @@
+@import "~styles/variables";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+body, html {
+  margin: 0;
+  font-family: $primary-font-family;
+  background: linear-gradient(to bottom, $background-top 50%, $background-bottom 100%);
+}
+
+h2 {
+  color: $white;;
+  text-shadow: 3px 3px 2px black;
+  border-bottom: 1px solid #454446;
+  padding-bottom: .5rem;
+}
+
+section {
+  background-color: $background-section;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 1px 3px #0000004f;
+  border: 1px solid #0000004f;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $accent-color;
+  transition: opacity 1s linear;
+  text-decoration: none;
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
+.particles {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Global Styles
+@import "~styles/grid";
+@import "~styles/util";

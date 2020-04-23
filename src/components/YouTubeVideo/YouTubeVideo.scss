@@ -1,0 +1,32 @@
+@import "~styles/variables";
+
+.youtube-video {
+    padding-bottom: .5rem;
+    margin-bottom: .5rem;
+    border-bottom: 1px solid #454446;
+    
+    &--header {
+        color: $white;
+        margin: 0;
+        font-size: 1rem;
+        font-weight: normal;
+        text-shadow: 3px 3px 2px black;
+        font-weight: 800;
+    }
+
+    &__meta {
+        padding-top: .5rem;
+        font-size: 14px;
+        color: $white;
+        text-shadow: 3px 3px 2px black;
+
+        &--time {
+            color: $accent-color;
+            display: block;
+        }
+
+        &--spacer {
+            margin: 0 .5rem;
+        }
+    }
+}

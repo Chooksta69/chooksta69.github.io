@@ -1,0 +1,36 @@
+// Width of the content area
+$content-width: 1200px;
+$on-laptop: 800px;
+
+// Spacing Units
+$spacing-unit: 60px;
+
+// Fonts
+$primary-font-family: 'Open Sans', sans-serif;
+
+// Colours
+$background-top: #849db5; 
+$background-bottom: #31394a;
+$background-section: #292929;
+$white: #fff;
+$accent-color: #8efbe3;
+
+// Z-Index Ordering
+$z-index-2: 2;
+$z-index-1: 1;
+
+//* Media Screen Mixin
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+//* Clearfix
+%clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}

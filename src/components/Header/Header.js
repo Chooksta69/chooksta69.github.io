@@ -5,7 +5,8 @@ import './Header.scss'
 const Header = () => (
   <header className="header">
     <div className="wrapper text-center">
-      <img className="margin-center" src={Logo} alt="DJ Zwackery" />
+      {/* TODO: This should be an env variable */}
+      <img className="margin-center" src={`/dj-zwackery/${Logo}`} alt="DJ Zwackery" />
     </div>
   </header>
 )

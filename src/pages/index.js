@@ -16,10 +16,15 @@ const sharedIconProps = {
 }
 
 const IndexPage = () => {
+  const [hydrated, setHydrated] = React.useState(false)
   useEffect(() => {
     const script = document.createElement('script')
     script.src = 'https://platform.twitter.com/widgets.js'
     document.getElementsByClassName('twitter-embed')[0].appendChild(script)
+
+    if (typeof window !== undefined) {
+      setHydrated(true)
+    }
   })
 
   return (

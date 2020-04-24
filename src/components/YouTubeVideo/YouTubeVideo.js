@@ -15,7 +15,7 @@ const YouTubeVideo = ({title, id, thumbnail, published}) => (
         <div className="youtube-video__meta display-flex align-items-center">
           <a className="youtube-video__meta--link" href="youtube-video__meta--link">View on YouTube</a>
           <span className="youtube-video__meta--spacer">|</span>
-          <time className="youtube-video__meta--time" datetime={published}>
+          <time className="youtube-video__meta--time" dateTime={published}>
             {timeSince(published)}
           </time>
         </div>

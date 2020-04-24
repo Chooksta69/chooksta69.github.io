@@ -4,6 +4,7 @@ import Header from '@components/Header/Header'
 import {graphql, StaticQuery} from 'gatsby'
 import PropTypes from 'prop-types'
 import React, {Fragment} from 'react'
+import background from '@images/background.jpg'
 
 /** Main site layout that renders using the Gatsby's StaticQuery: https://www.gatsbyjs.org/docs/static-query/ */
 const Layout = ({children}) => (
@@ -20,6 +21,10 @@ const Layout = ({children}) => (
     `}
     render={data => (
       <Fragment>
+        <div
+          className="overlay"
+          style={{backgroundImage: `url(${background})`}}
+        ></div>
         <Header />
         <div className="wrapper">
           <main id="main">{children}</main>

@@ -81,7 +81,7 @@ const IndexPage = () => {
               data-transparent
               href="https://twitter.com/DJZwackery?ref_src=twsrc%5Etfw"
             >
-              Tweets by TwitterDev
+              Tweets by DJZwackery
             </a>{' '}
           </section>
         </div>

@@ -23,9 +23,6 @@ module.exports = {
       resolve: `gatsby-plugin-sass`
     },
     {
-      resolve: `gatsby-plugin-twitter`
-    },
-    {
       resolve: `gatsby-plugin-react-helmet`,
     },
     {

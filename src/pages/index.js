@@ -21,6 +21,7 @@ const IndexPage = () => {
     script.src = 'https://platform.twitter.com/widgets.js'
     document.getElementsByClassName('twitter-embed')[0].appendChild(script)
   }, [])
+
   return (
     <Layout>
       {/* // TODO: This needs to be done */}
@@ -77,8 +78,6 @@ const IndexPage = () => {
               data-height="825"
               data-chrome="noheader transparent nofooter noborders"
               data-theme="dark"
-              data-noheader
-              data-transparent
               href="https://twitter.com/DJZwackery?ref_src=twsrc%5Etfw"
             >
               Tweets by DJZwackery

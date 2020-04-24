@@ -4,7 +4,7 @@ import './Footer.scss'
 const Footer = () => (
   <footer className="footer wrapper">
     <div className="extra-small-12">
-      <div className=" footer__inner background-grey">Copyright 2020</div>
+      <div className="footer__inner background-grey">Copyright 2020</div>
     </div>
   </footer>
 )

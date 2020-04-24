@@ -6,7 +6,7 @@ const Header = () => (
   <header className="header">
     <div className="wrapper text-center">
       {/* TODO: This should be an env variable */}
-      <img className="margin-center" src={`${Logo}`} alt="DJ Zwackery" />
+      <img className="margin-center" src={`/dj-zwackery/${Logo}`} alt="DJ Zwackery" />
     </div>
   </header>
 )

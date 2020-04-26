@@ -1,6 +1,9 @@
-footer {
+.footer {
+  padding: 0 1rem;
+  color: white;
 
   &__inner {
     color: white;
+    padding: 1rem;
   }
 }

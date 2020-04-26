@@ -12,7 +12,12 @@ const YouTubeVideo = ({title, id, thumbnail, published}) => (
   <article className="youtube-video">
     <div className="row justify-content-center align-items-center">
       <div className="extra-small-4">
-        {thumbnail && thumbnail.url && <img src={thumbnail.url} />}
+        {thumbnail && thumbnail.url &&           <a
+            className="youtube-video__meta--link"
+            href={`https://www.youtube.com/watch?v=${id}`}
+            rel="noopener noreferrer"
+            target="_blank"
+          ><img src={thumbnail.url} /></a>}
       </div>
 
       <div className="extra-small-8">

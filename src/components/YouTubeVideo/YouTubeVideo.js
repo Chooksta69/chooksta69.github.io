@@ -21,7 +21,9 @@ const YouTubeVideo = ({title, id, thumbnail, published}) => (
         <div className="youtube-video__meta display-flex align-items-center">
           <a
             className="youtube-video__meta--link"
-            href="youtube-video__meta--link"
+            href={`https://www.youtube.com/watch?v=${id}`}
+            rel="noopener noreferrer"
+            target="_blank"
           >
             View on YouTube
           </a>

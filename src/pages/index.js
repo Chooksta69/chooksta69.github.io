@@ -19,7 +19,16 @@ const sharedIconProps = {
   fill: '#fff'
 }
 
-const IndexPage = () => {
+const IndexPage = ({
+  youtubeUrl,
+  lastfmUrl,
+  twitterUrl,
+  facebookUrl,
+  soundcloudUrl,
+  mixcloudUrl,
+  twitchUrl,
+  discordUrl
+}) => {
   return (
     <Layout>
       {/* // TODO: This needs to be done */}
@@ -29,34 +38,54 @@ const IndexPage = () => {
           <section className="social-section card background-grey">
             <div className="display-flex align-items-center justify-content-space-between">
               <div className=" text-center">
-                <YouTubeIcon className="social" {...sharedIconProps} />
+                <a href={youtubeUrl} rel="noopener noreferrer" target="_blank">
+                  <YouTubeIcon className="social" {...sharedIconProps} />
+                </a>
               </div>
 
               <div className=" text-center">
-                <LastfmIcon className="social" {...sharedIconProps} />
+                <a href={lastfmUrl} rel="noopener noreferrer" target="_blank">
+                  <LastfmIcon className="social" {...sharedIconProps} />
+                </a>
               </div>
 
               <div className="text-center">
-                <TwitterIcon className="social" {...sharedIconProps} />
+                <a href={twitterUrl} rel="noopener noreferrer" target="_blank">
+                  <TwitterIcon className="social" {...sharedIconProps} />
+                </a>
               </div>
 
               <div className="text-center">
-                <SoundCloudIcon className="social" {...sharedIconProps} />
+                <a href={facebookUrl} rel="noopener noreferrer" target="_blank">
+                  <FacebookIcon className="social" {...sharedIconProps} />
+                </a>
+              </div>
+
+              <div className="text-center">
+                <a
+                  href={soundcloudUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <SoundCloudIcon className="social" {...sharedIconProps} />
+                </a>
               </div>
               <div className="text-center">
-                <MixCloudIcon className="social" {...sharedIconProps} />
+                <a href={mixcloudUrl} rel="noopener noreferrer" target="_blank">
+                  <MixCloudIcon className="social" {...sharedIconProps} />
+                </a>
               </div>
 
               <div className=" text-center">
-                <TwitchIcon className="social" {...sharedIconProps} />
+                <a href={twitchUrl} rel="noopener noreferrer" target="_blank">
+                  <TwitchIcon className="social" {...sharedIconProps} />
+                </a>
               </div>
 
               <div className="text-center">
-                <DiscordIcon className="social" {...sharedIconProps} />
-              </div>
-
-              <div className="text-center">
-                <FacebookIcon className="social" {...sharedIconProps} />
+                <a href={discordUrl} rel="noopener noreferrer" target="_blank">
+                  <DiscordIcon className="social" {...sharedIconProps} />
+                </a>
               </div>
             </div>
           </section>
@@ -95,6 +124,17 @@ const IndexPage = () => {
       </div>
     </Layout>
   )
+}
+
+IndexPage.defaultProps = {
+  youtubeUrl: process.env.GATSBY_YOUTUBE_URL,
+  lastfmUrl: process.env.GATSBY_LASTFM_URL,
+  twitterUrl: process.env.GATSBY_TWITTER_URL,
+  soundcloudUrl: process.env.GATSBY_SOUNDCLOUD_URL,
+  mixcloudUrl: process.env.GATSBY_MIXCLOUD_URL,
+  twitchUrl: process.env.GATSBY_TWITCH_URL,
+  discordUrl: process.env.GATSBY_DISCORD_URL,
+  facebookUrl: process.env.GATSBY_FACEBOOK_URL
 }
 
 export default IndexPage

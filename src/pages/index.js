@@ -14,8 +14,8 @@ import FacebookIcon from '@components/FacebookIcon/FacebookIcon'
 import YouTubeData from '@data/youtube.json'
 
 const sharedIconProps = {
-  height: '3.2em',
-  width: '3.2rem',
+  height: '2.5em',
+  width: '2.5rem',
   fill: '#fff'
 }
 

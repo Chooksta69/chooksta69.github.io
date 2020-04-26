@@ -3,8 +3,10 @@ import {format as timeSince} from 'timeago.js'
 import './YouTubeVideo.scss'
 
 function htmlDecode(input) {
-  var doc = new DOMParser().parseFromString(input, 'text/html')
-  return doc.documentElement.textContent
+  if (typeof window !== 'undefined') {
+    var doc = new DOMParser().parseFromString(input, 'text/html')
+    return doc.documentElement.textContent
+  }
 }
 
 const YouTubeVideo = ({title, id, thumbnail, published}) => (

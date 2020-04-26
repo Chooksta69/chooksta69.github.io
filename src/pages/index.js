@@ -8,7 +8,9 @@ import MixCloudIcon from '@components/MixcloudIcon/MixcloudIcon'
 import TwitchIcon from '@components/TwitchIcon/TwitchIcon'
 import YouTubeFeed from '@components/YouTubeFeed/YouTubeFeed'
 import SatelliteIcon from '@components/SatelliteIcon/SatelliteIcon'
-import SpeakerIcon from '@components/SpeakerIcon/SpeakerIcon';
+import SpeakerIcon from '@components/SpeakerIcon/SpeakerIcon'
+import DiscordIcon from '@components/DiscordIcon/DiscordIcon'
+import FacebookIcon from '@components/FacebookIcon/FacebookIcon'
 import YouTubeData from '@data/youtube.json'
 
 const sharedIconProps = {
@@ -18,7 +20,6 @@ const sharedIconProps = {
 }
 
 const IndexPage = () => {
-
   return (
     <Layout>
       {/* // TODO: This needs to be done */}
@@ -26,28 +27,36 @@ const IndexPage = () => {
       <div className="row margin-center">
         <div className="small-12 extra-small-12">
           <section className="social-section card background-grey">
-            <div className="row align-items-center justify-content-center">
-              <div className="extra-small-2 text-center">
+            <div className="display-flex align-items-center justify-content-space-between">
+              <div className=" text-center">
                 <YouTubeIcon className="social" {...sharedIconProps} />
               </div>
 
-              <div className="extra-small-2 text-center">
+              <div className=" text-center">
                 <LastfmIcon className="social" {...sharedIconProps} />
               </div>
 
-              <div className="extra-small-2 text-center">
+              <div className="text-center">
                 <TwitterIcon className="social" {...sharedIconProps} />
               </div>
 
-              <div className="extra-small-2 text-center">
+              <div className="text-center">
                 <SoundCloudIcon className="social" {...sharedIconProps} />
               </div>
-              <div className="extra-small-2 text-center">
+              <div className="text-center">
                 <MixCloudIcon className="social" {...sharedIconProps} />
               </div>
 
-              <div className="extra-small-2 text-center">
+              <div className=" text-center">
                 <TwitchIcon className="social" {...sharedIconProps} />
+              </div>
+
+              <div className="text-center">
+                <DiscordIcon className="social" {...sharedIconProps} />
+              </div>
+
+              <div className="text-center">
+                <FacebookIcon className="social" {...sharedIconProps} />
               </div>
             </div>
           </section>
@@ -75,7 +84,7 @@ const IndexPage = () => {
             <a
               class="twitter-timeline"
               data-height="900"
-              data-chrome="noheader transparent nofooter noborders"
+              data-chrome="noheader transparent nofooter noborders noscrollbar"
               data-theme="dark"
               href="https://twitter.com/DJZwackery?ref_src=twsrc%5Etfw"
             >

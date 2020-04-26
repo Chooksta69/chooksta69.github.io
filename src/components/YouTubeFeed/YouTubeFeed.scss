@@ -1,4 +1,9 @@
 .youtube-feed {
   height: 905px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }

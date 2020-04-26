@@ -24,8 +24,10 @@ const IndexPage = () => {
     script.src = 'https://platform.twitter.com/widgets.js'
     document.getElementsByClassName('twitter-embed')[0].appendChild(script)
 
-    if (typeof window !== undefined) {
-      setHydrated(true)
+    if (window.twttr) {
+      if (typeof window.twttr.widgets !== 'undefined') {
+        window.twttr.widgets.load()
+      }
     }
   })
 

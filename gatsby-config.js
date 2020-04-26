@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    name: 'DJ Zwackery',
+    title: 'DJ Zwackery',
+    description: 'Homepage of Australian Happy Hardcore DJ, Zwackery',
+    ogDescription: 'Homepage of Australian Happy Hardcore DJ, Zwackery',
+    author: `@DJZwackery`,
+    url: 'https://djzwackery.com',
+    logo: '/src/images/logo.png',
+    image: '/src/images/meta.png',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

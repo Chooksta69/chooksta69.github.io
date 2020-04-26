@@ -31,8 +31,7 @@ const IndexPage = ({
 }) => {
   return (
     <Layout>
-      {/* // TODO: This needs to be done */}
-      {/* <SEO title="Home" /> */}
+      <SEO keywords="happy, hardcore, dj, uk, australia, autralian, live, stream, top, lad" />
       <div className="row margin-center">
         <div className="small-12 extra-small-12">
           <section className="social-section card background-grey">

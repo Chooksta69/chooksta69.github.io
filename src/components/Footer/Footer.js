@@ -14,7 +14,7 @@ const Footer = ({email}) => (
 
         <div className="extra-small-6">
           <div className="text-right">
-            <a href={`mailto:${email}`}>Contact</a>
+            <a href={`mailto:${email}`}>Contact/Bookings</a>
           </div>
         </div>
       </div>
@@ -23,7 +23,7 @@ const Footer = ({email}) => (
 )
 
 Footer.defaultProps = {
-  email: process.env.GATSBY_EMAIL
+  email: process.env.GATSBY_EMAIL_ADDRESS
 }
 
 export default Footer

@@ -2,8 +2,8 @@
   height: 905px;
   overflow-y: scroll;
   overflow-x: hidden;
+}
 
-  ::-webkit-scrollbar {
-    display: none;
-  }
+.youtube-feed::-webkit-scrollbar {
+  display: none;
 }

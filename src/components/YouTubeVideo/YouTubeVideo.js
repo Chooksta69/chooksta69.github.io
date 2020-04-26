@@ -1,12 +1,11 @@
 import React from 'react'
 import {format as timeSince} from 'timeago.js'
 import './YouTubeVideo.scss'
+import {DOMParser} from 'xmldom'
 
 function htmlDecode(input) {
-  if (typeof window !== 'undefined') {
-    var doc = new DOMParser().parseFromString(input, 'text/html')
-    return doc.documentElement.textContent
-  }
+  const dom = new DOMParser().parseFromString(input, 'text/html')
+  return dom.childNodes[0].textContent
 }
 
 const YouTubeVideo = ({title, id, thumbnail, published}) => (

@@ -4,16 +4,16 @@ import './Footer.scss'
 const Footer = ({email}) => (
   <footer className="footer">
     <div className="footer__inner card background-grey">
-      <div className="display-flex">
-        <div className="extra-small-6">
+      <div className="row">
+        <div className="small-6 extra-small-12">
           <div className="text-left">
             © {new Date().getFullYear()} DJ Zwackery | Page by{' '}
             <a href="https://jamesiv.es/">James Ives</a>
           </div>
         </div>
 
-        <div className="extra-small-6">
-          <div className="text-right">
+        <div className="small-6 extra-small-12">
+          <div className="footer__inner--contact">
             <a href={`mailto:${email}`}>Contact/Bookings</a>
           </div>
         </div>

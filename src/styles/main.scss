@@ -72,6 +72,11 @@ a {
     width: 3.2rem;
   }
 
+  @media screen and (max-width: 488px) {
+    width: 1.5rem;
+    padding: 3px;
+  }
+
   &:hover {
     opacity: .5;
   }

@@ -5,5 +5,12 @@
   &__inner {
     color: white;
     padding: 1rem;
+
+    &--contact {
+      text-align: left;
+      @media only screen and (min-width: 48em) {
+        text-align: right;
+      }
+    }
   }
 }

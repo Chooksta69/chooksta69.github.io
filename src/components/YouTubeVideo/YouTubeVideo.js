@@ -23,7 +23,7 @@ const YouTubeVideo = ({title, id, thumbnail, published}) => (
       <div className="extra-small-8">
         <h3 className="youtube-video--header">{htmlDecode(title)}</h3>
 
-        <div className="youtube-video__meta display-flex align-items-center">
+        <div className="youtube-video__meta display-flex flex-wrap-wrap align-items-center">
           <a
             className="youtube-video__meta--link"
             href={`https://www.youtube.com/watch?v=${id}`}

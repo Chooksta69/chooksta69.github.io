@@ -1,7 +1,10 @@
 name: Refresh Feed
 on:
-  schedule:
-    - cron: 50 17 * * 0-6
+  push:
+    branches:
+      - dev
+  # schedule:
+  #   - cron: 50 17 * * 0-6
 jobs:
   refresh-feed:
     runs-on: ubuntu-latest
@@ -15,8 +18,8 @@ jobs:
       - name: Fetch API Data 📦
         uses: JamesIves/fetch-api-data-action@releases/v1
         with:
-          ENDPOINT: https://www.googleapis.com/youtube/v3/search
-          CONFIGURATION: '{ "method": "GET", "headers": {"qs": {"key": "${{secrets.YOUTUBE_API_KEY}}", "channelId": "UCLIVVSFSj9kbYUJzGYIjiUg", "part": "snippet,id", "order": "date", "maxResults":"10"}} }'
+          ENDPOINT: https://www.googleapis.com/youtube/v3/search?key=${{secrets.YOUTUBE_API_KEY}}&channelId=UCLIVVSFSj9kbYUJzGYIjiUg&part=snippet,id&order=date&maxResults=10
+          CONFIGURATION: '{ "method": "GET" }'
           SAVE_NAME: youtube
 
       - name: Build and Deploy 🚀

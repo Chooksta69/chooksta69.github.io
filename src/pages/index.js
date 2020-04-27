@@ -38,25 +38,45 @@ const IndexPage = ({
           <section className="social-section card background-grey">
             <div className="display-flex align-items-center justify-content-space-between">
               <div className=" text-center">
-                <a href={youtubeUrl} rel="noopener noreferrer" target="_blank">
+                <a
+                  href={youtubeUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  title="YouTube Profile"
+                >
                   <YouTubeIcon className="social" {...sharedIconProps} />
                 </a>
               </div>
 
               <div className=" text-center">
-                <a href={lastfmUrl} rel="noopener noreferrer" target="_blank">
+                <a
+                  href={lastfmUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  title="Lastfm Profile"
+                >
                   <LastfmIcon className="social" {...sharedIconProps} />
                 </a>
               </div>
 
               <div className="text-center">
-                <a href={twitterUrl} rel="noopener noreferrer" target="_blank">
+                <a
+                  href={twitterUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  title="Twitter Profile"
+                >
                   <TwitterIcon className="social" {...sharedIconProps} />
                 </a>
               </div>
 
               <div className="text-center">
-                <a href={facebookUrl} rel="noopener noreferrer" target="_blank">
+                <a
+                  href={facebookUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  title="Facebook Profile"
+                >
                   <FacebookIcon className="social" {...sharedIconProps} />
                 </a>
               </div>
@@ -66,24 +86,40 @@ const IndexPage = ({
                   href={soundcloudUrl}
                   rel="noopener noreferrer"
                   target="_blank"
+                  title="SoundCloud Profile"
                 >
                   <SoundCloudIcon className="social" {...sharedIconProps} />
                 </a>
               </div>
               <div className="text-center">
-                <a href={mixcloudUrl} rel="noopener noreferrer" target="_blank">
+                <a
+                  href={mixcloudUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  title="MixCloud Profile"
+                >
                   <MixCloudIcon className="social" {...sharedIconProps} />
                 </a>
               </div>
 
               <div className=" text-center">
-                <a href={twitchUrl} rel="noopener noreferrer" target="_blank">
+                <a
+                  href={twitchUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  title="TWitch Profile"
+                >
                   <TwitchIcon className="social" {...sharedIconProps} />
                 </a>
               </div>
 
               <div className="text-center">
-                <a href={discordUrl} rel="noopener noreferrer" target="_blank">
+                <a
+                  href={discordUrl}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  title="Discord Server"
+                >
                   <DiscordIcon className="social" {...sharedIconProps} />
                 </a>
               </div>

@@ -16,7 +16,7 @@ const Footer = ({email}) => (
 
         <div className="small-6 extra-small-12">
           <div className="footer__inner--contact">
-            <a href={`mailto:${email}`}>Contact/Bookings</a>
+            <a href={`mailto:${email}`}>Contact / Bookings</a>
           </div>
         </div>
       </div>

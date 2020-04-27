@@ -6,8 +6,8 @@ module.exports = {
     ogDescription: 'Homepage of Australian Happy Hardcore DJ, Zwackery',
     author: `@DJZwackery`,
     url: 'https://djzwackery.com',
-    logo: '/src/images/logo.png',
-    image: '/src/images/meta.png'
+    logo: '/static/images/logo.png',
+    image: '/static/images/meta.png'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,8 +15,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/static/images`,
+      },
     },
     {
       resolve: `gatsby-transformer-sharp`

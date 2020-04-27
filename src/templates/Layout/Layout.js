@@ -23,7 +23,7 @@ const Layout = ({children}) => (
       <Fragment>
         <div
           className="overlay"
-          style={{backgroundImage: `url(/dj-zwackery/${background})`}}
+          style={{backgroundImage: `url(${background})`}}
         ></div>
         <Header />
         <div className="wrapper">

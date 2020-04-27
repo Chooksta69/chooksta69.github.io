@@ -111,7 +111,7 @@ const IndexPage = ({
             </header>
             <div className="twitter-embed"></div>
             <a
-              class="twitter-timeline"
+              className="twitter-timeline"
               data-height="900"
               data-chrome="noheader transparent nofooter noborders noscrollbar"
               data-theme="dark"

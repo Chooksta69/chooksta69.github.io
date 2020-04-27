@@ -1,3 +1,6 @@
+@import '~styles/variables';
+
+// Positioning
 .margin-center {
   margin: 0 auto;
 }
@@ -6,10 +9,11 @@
   text-align: center;
 }
 
-.text-right { 
+.text-right {
   text-align: right;
 }
 
+// Height/Width
 .width-100 {
   width: 100%;
 }
@@ -18,6 +22,7 @@
   height: 100%;
 }
 
+// Spacers
 .margin-bottom-2 {
   margin-bottom: 2rem;
 }
@@ -26,6 +31,7 @@
   margin-top: 1rem;
 }
 
+// Alignment and Flex Helpers
 .justify-content-center {
   justify-content: center;
 }
@@ -46,12 +52,13 @@
   display: flex;
 }
 
+// Colors and styling
 .background-grey {
   background-color: $grey;
 }
 
 .card {
+  border: 1px solid $card-shadow-color;
   border-radius: 10px;
-  box-shadow: 1px 3px #0000004f;
-  border: 1px solid #0000004f;
+  box-shadow: 1px 3px $card-shadow-color;
 }

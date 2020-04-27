@@ -1,72 +1,70 @@
-@import "~styles/variables";
+@import '~styles/variables';
 
 .youtube-video {
-    padding-bottom: .5rem;
-    margin-bottom: .5rem;
-    padding: 10px;
-    border-bottom: 1px solid $shadow-color;
+  border-bottom: 1px solid $shadow-color;
+  margin-bottom: 0.5rem;
+  padding: 10px;
+  padding-bottom: 0.5rem;
 
-    &:hover {
-      background-color: rgba(25,30,35,.61);
+  &:hover {
+    background-color: $hover;
+  }
+
+  &--header {
+    color: $white;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 27px;
+    margin: 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+    // This is a bit of a hack to mimick the Twitter embeds media query situation
+    // as it uses JavaScript to match its containers width.
+    @media screen and (max-width: 1216px) {
+      font-size: 18px;
+      line-height: 24px;
     }
 
-    &--header {
-        color: $white;
-        margin: 0;
-        font-size: 21px;
-
-        line-height: 27px;
-        font-weight: 300;
-
-        white-space: pre-wrap;
-        word-wrap: break-word;
-
-        // This is a bit of a hack to 
-        @media screen and (max-width: 1216px) {
-          font-size: 18px;
-          line-height: 24px;
-        }
-
-        @media screen and (max-width: 967px) {
-          font-size: 14px;
-          line-height: 18px
-        }
-
-        @media screen and (max-width: 767px) {
-          font-size: 27px;
-          line-height: 36px;
-        }
-
-        @media screen and (max-width: 718px) {
-          font-size: 21px;
-          line-height: 27px;
-        }
-
-        @media screen and (max-width: 608px) {
-          font-size: 18px;
-          line-height: 24px;
-        }
-
-
-        @media screen and (max-width: 488px) {
-          font-size: 14px;
-          line-height: 18px;
-        }
+    @media screen and (max-width: 967px) {
+      font-size: 14px;
+      line-height: 18px;
     }
 
-    &__meta {
-        padding-top: .5rem;
-        font-size: 14px;
-        color: $white;
-        text-shadow: 3px 3px 2px $shadow-color;
-
-        &--time {
-            color: $accent-color;
-            display: block;
-        }
-
-        &--spacer {
-            margin: 0 .5rem;
-        }
+    @media screen and (max-width: 767px) {
+      font-size: 27px;
+      line-height: 36px;
     }
+
+    @media screen and (max-width: 718px) {
+      font-size: 21px;
+      line-height: 27px;
+    }
+
+    @media screen and (max-width: 608px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    @media screen and (max-width: 488px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__meta {
+    color: $white;
+    font-size: 14px;
+    padding-top: 0.5rem;
+    text-shadow: 3px 3px 2px $shadow-color;
+
+    &--time {
+      color: $accent-color;
+      display: block;
+    }
+
+    &--spacer {
+      margin: 0 0.5rem;
+    }
+  }
 }

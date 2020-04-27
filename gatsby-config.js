@@ -7,7 +7,7 @@ module.exports = {
     author: `@DJZwackery`,
     url: 'https://djzwackery.com',
     logo: '/src/images/logo.png',
-    image: '/src/images/meta.png',
+    image: '/src/images/meta.png'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,11 +15,11 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     {
-      resolve: `gatsby-transformer-sharp`,
+      resolve: `gatsby-transformer-sharp`
     },
     {
       resolve: `gatsby-plugin-sharp`
@@ -28,7 +28,7 @@ module.exports = {
       resolve: `gatsby-plugin-sass`
     },
     {
-      resolve: `gatsby-plugin-react-helmet`,
+      resolve: `gatsby-plugin-react-helmet`
     },
     {
       resolve: `gatsby-plugin-alias-imports`,
@@ -41,10 +41,10 @@ module.exports = {
           '@images': 'src/images',
           '@audio': 'static/audio',
           '@templates': 'src/templates',
-          '@data': 'src/data',
+          '@data': 'src/data'
         },
-        extensions: ['js', 'scss'],
-      },
+        extensions: ['js', 'scss']
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -55,8 +55,8 @@ module.exports = {
         background_color: `#31394a`,
         theme_color: `#849db5`,
         display: `minimal-ui`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
-      },
-    },
-  ],
+        icon: `src/images/icon.png` // This path is relative to the root of the site.
+      }
+    }
+  ]
 }

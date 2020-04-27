@@ -1,5 +1,7 @@
-import React from 'react';
+import React from 'react'
+import PropTypes from 'prop-types';
 
+// Renders a Satellite icon.
 const SatelliteIcon = props => (
   <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
     <title>Satellite Icon</title>
@@ -37,5 +39,15 @@ const SatelliteIcon = props => (
     />
   </svg>
 )
+
+SatelliteIcon.propTypes = {
+  /** The width of the icon. */
+  width: PropTypes.string,
+  /** The height of the icon. */
+  height: PropTypes.string,
+  /** The fill color of the icon. */
+  fill: PropTypes.string,
+}
+
 
 export default SatelliteIcon

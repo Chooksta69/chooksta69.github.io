@@ -1,9 +1,10 @@
 .youtube-feed {
   height: 905px;
-  overflow-y: scroll;
   overflow-x: hidden;
-}
+  overflow-y: scroll;
 
-.youtube-feed::-webkit-scrollbar {
-  display: none;
+  // Hides the scrollbar visibility on webkit browsers.
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }

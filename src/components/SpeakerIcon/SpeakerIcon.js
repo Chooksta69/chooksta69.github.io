@@ -1,5 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
+// Renders a loud speaker icon.
 const SpeakerIcon = props => (
   <svg {...props} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
     <title>Speaker Icon</title>
@@ -19,5 +21,15 @@ const SpeakerIcon = props => (
     <ellipse fill="#99AAB5" cx="31.325" cy="14.75" rx="1.5" ry="4.348" />
   </svg>
 )
+
+SpeakerIcon.propTypes = {
+  /** The width of the icon. */
+  width: PropTypes.string,
+  /** The height of the icon. */
+  height: PropTypes.string,
+  /** The fill color of the icon. */
+  fill: PropTypes.string,
+}
+
 
 export default SpeakerIcon

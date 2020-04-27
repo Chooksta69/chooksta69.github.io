@@ -1,6 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import './Footer.scss'
 
+// Renders the global footer.
 const Footer = ({email}) => (
   <footer className="footer">
     <div className="footer__inner card background-grey">
@@ -21,6 +23,11 @@ const Footer = ({email}) => (
     </div>
   </footer>
 )
+
+Footer.propTypes = {
+  /** The email for the contact button. */
+  email: PropTypes.string,
+}
 
 Footer.defaultProps = {
   email: process.env.GATSBY_EMAIL_ADDRESS

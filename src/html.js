@@ -26,7 +26,7 @@ export default function HTML(props) {
           key={`body`}
           id="___gatsby"
           className="root"
-          dangerouslySetInnerHTML={{ __html: props.body }}
+          dangerouslySetInnerHTML={{__html: props.body}}
         />
         {props.postBodyComponents}
       </body>
@@ -40,5 +40,5 @@ HTML.propTypes = {
   bodyAttributes: PropTypes.object,
   preBodyComponents: PropTypes.array,
   body: PropTypes.string,
-  postBodyComponents: PropTypes.array,
+  postBodyComponents: PropTypes.array
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Layout from '@templates/Layout/Layout'
 import YouTubeIcon from '@components/YouTubeIcon/YouTubeIcon'
 import LastfmIcon from '@components/LastfmIcon/LastfmIcon'
@@ -30,6 +30,13 @@ const IndexPage = ({
   twitchUrl,
   discordUrl
 }) => {
+
+  useEffect(() => {
+    if (window.twttr) {
+      window.twttr.widgets.load()
+    }
+  })
+
   return (
     <Layout>
       <SEO keywords="happy, hardcore, dj, uk, australia, autralian, live, stream, top, lad" />

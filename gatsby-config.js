@@ -6,8 +6,8 @@ module.exports = {
     ogDescription: 'Homepage of Australian Happy Hardcore DJ, Zwackery',
     author: `@DJZwackery`,
     url: 'https://djzwackery.com',
-    logo: '/static/images/logo.png',
-    image: '/static/images/meta.png'
+    logo: '/images/logo.png',
+    image: '/images/meta.png'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

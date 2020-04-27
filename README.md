@@ -4,7 +4,7 @@ Homepage of Australia based Happy Hardcore DJ, Zwackery. Written with [React](ht
 
 ## Getting Started
 
-To run the project locally you must have Node installed. With it installed run `npm install` followed by `npm run-script start` to access the page on port `8000`.
+To run the project locally you must have [Node](https://nodejs.org/en/) installed. With it installed run `npm install` followed by `npm run-script start` to access the page on port `8000`.
 
 ### Updating Social Links
 

@@ -65,6 +65,4 @@ yarn-error.log
 
 # Yarn Integrity file
 .yarn-integrity
-
-# Npm
-package-lock.json
+yarn.lock

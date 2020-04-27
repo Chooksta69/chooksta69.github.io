@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import Layout from '@templates/Layout/Layout'
 import YouTubeIcon from '@components/YouTubeIcon/YouTubeIcon'
 import LastfmIcon from '@components/LastfmIcon/LastfmIcon'
@@ -11,6 +11,7 @@ import SatelliteIcon from '@components/SatelliteIcon/SatelliteIcon'
 import SpeakerIcon from '@components/SpeakerIcon/SpeakerIcon'
 import DiscordIcon from '@components/DiscordIcon/DiscordIcon'
 import FacebookIcon from '@components/FacebookIcon/FacebookIcon'
+import SEO from '@components/SEO/SEO'
 import YouTubeData from '@data/youtube.json'
 
 const sharedIconProps = {

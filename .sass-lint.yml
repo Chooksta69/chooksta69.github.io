@@ -6,7 +6,7 @@ rules:
   # Extends
   extends-before-mixins: 2
   extends-before-declarations: 2
-  placeholder-in-extend: 2
+  placeholder-in-extend: 0
 
   # Mixins
   mixins-before-declarations: 2
@@ -48,14 +48,14 @@ rules:
   declarations-before-nesting: 2
   force-attribute-nesting: 2
   force-element-nesting: 2
-  force-pseudo-nesting: 2
+  force-pseudo-nesting: 0
 
   # Name Formats
   class-name-format: 0
   function-name-format: 2
   id-name-format: 0
   mixin-name-format: 1
-  placeholder-name-format: 2
+  placeholder-name-format: 0
   variable-name-format: 2
 
   # Style Guide

@@ -2,9 +2,8 @@
   height: 905px;
   overflow-x: hidden;
   overflow-y: scroll;
+}
 
-  // Hides the scrollbar visibility on webkit browsers.
-  ::-webkit-scrollbar {
-    display: none;
-  }
+.youtube-feed::-webkit-scrollbar {
+  display: none;
 }

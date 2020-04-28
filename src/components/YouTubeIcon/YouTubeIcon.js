@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 const YouTubeIcon = props => (
   <svg
@@ -19,7 +19,7 @@ YouTubeIcon.propTypes = {
   /** The height of the icon. */
   height: PropTypes.string,
   /** The fill color of the icon. */
-  fill: PropTypes.string,
+  fill: PropTypes.string
 }
 
 export default YouTubeIcon

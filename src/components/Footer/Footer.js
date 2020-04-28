@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import './Footer.scss'
 
 // Renders the global footer.
@@ -26,7 +26,7 @@ const Footer = ({email}) => (
 
 Footer.propTypes = {
   /** The email for the contact button. */
-  email: PropTypes.string,
+  email: PropTypes.string
 }
 
 Footer.defaultProps = {

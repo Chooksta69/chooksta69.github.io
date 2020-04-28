@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 // Renders a Satellite icon.
 const SatelliteIcon = props => (
@@ -46,8 +46,7 @@ SatelliteIcon.propTypes = {
   /** The height of the icon. */
   height: PropTypes.string,
   /** The fill color of the icon. */
-  fill: PropTypes.string,
+  fill: PropTypes.string
 }
-
 
 export default SatelliteIcon

@@ -1,5 +1,5 @@
 import React from 'react'
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 // Renders a loud speaker icon.
 const SpeakerIcon = props => (
@@ -28,8 +28,7 @@ SpeakerIcon.propTypes = {
   /** The height of the icon. */
   height: PropTypes.string,
   /** The fill color of the icon. */
-  fill: PropTypes.string,
+  fill: PropTypes.string
 }
-
 
 export default SpeakerIcon

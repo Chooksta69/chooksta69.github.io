@@ -30,7 +30,6 @@ const IndexPage = ({
   twitchUrl,
   discordUrl
 }) => {
-
   useEffect(() => {
     if (window.twttr) {
       window.twttr.widgets.load()
@@ -147,7 +146,10 @@ const IndexPage = ({
         </div>
 
         <div className="small-6 extra-small-12 margin-bottom-2">
-          <section className="card background-grey">
+          <section
+            className="card background-grey"
+            style={{minHeight: '900px'}}
+          >
             <header className="display-flex align-items-center justify-content-center">
               <h2>Latest Tweets</h2>
               <SpeakerIcon width="30px" height="30px" />

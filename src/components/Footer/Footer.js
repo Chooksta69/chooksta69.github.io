@@ -9,7 +9,7 @@ const Footer = ({email}) => (
       <div className="row">
         <div className="small-6 extra-small-12">
           <div className="text-left">
-            © {new Date().getFullYear()} DJ Zwackery | Page by{' '}
+            © {new Date().getFullYear()} DJ Zwackery | Page created by{' '}
             <a href="https://jamesiv.es/">James Ives</a>
           </div>
         </div>

@@ -68,6 +68,7 @@ a {
   @extend .card;
   background-color: $social-grey;
   border-radius: 10px;
+  cursor: pointer;
   padding: 0 10px;
   transition: opacity 0.5s linear;
   width: 2rem;

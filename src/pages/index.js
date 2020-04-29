@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import Layout from '@templates/Layout/Layout'
 import YouTubeIcon from '@components/YouTubeIcon/YouTubeIcon'
 import LastfmIcon from '@components/LastfmIcon/LastfmIcon'
@@ -11,6 +11,7 @@ import SatelliteIcon from '@components/SatelliteIcon/SatelliteIcon'
 import SpeakerIcon from '@components/SpeakerIcon/SpeakerIcon'
 import DiscordIcon from '@components/DiscordIcon/DiscordIcon'
 import FacebookIcon from '@components/FacebookIcon/FacebookIcon'
+import TwitchEmbed from '@components/TwitchEmbed/TwitchEmbed'
 import SEO from '@components/SEO/SEO'
 import YouTubeData from '@data/youtube.json'
 
@@ -21,17 +22,18 @@ const sharedIconProps = {
 }
 
 const IndexPage = ({
-  youtubeUrl,
-  lastfmUrl,
-  twitterUrl,
+  discordUrl,
   facebookUrl,
-  soundcloudUrl,
+  lastfmUrl,
   mixcloudUrl,
+  soundcloudUrl,
+  twitchHandle,
   twitchUrl,
-  discordUrl
+  twitterUrl,
+  youtubeUrl
 }) => {
   useEffect(() => {
-    if (window.twttr) {
+    if (typeof window !== 'undefined' && window.twttr) {
       window.twttr.widgets.load()
     }
   })
@@ -43,7 +45,7 @@ const IndexPage = ({
         <div className="small-12 extra-small-12">
           <section className="social-section card background-grey">
             <div className="display-flex align-items-center justify-content-space-between">
-              <div className=" text-center">
+              <div className="text-center">
                 <a
                   href={youtubeUrl}
                   rel="noopener noreferrer"
@@ -54,7 +56,7 @@ const IndexPage = ({
                 </a>
               </div>
 
-              <div className=" text-center">
+              <div className="text-center">
                 <a
                   href={lastfmUrl}
                   rel="noopener noreferrer"
@@ -108,7 +110,7 @@ const IndexPage = ({
                 </a>
               </div>
 
-              <div className=" text-center">
+              <div className="text-center">
                 <a
                   href={twitchUrl}
                   rel="noopener noreferrer"
@@ -132,10 +134,13 @@ const IndexPage = ({
             </div>
           </section>
         </div>
+
+        <TwitchEmbed channel={twitchHandle} />
+
         <div className="small-6 extra-small-12 margin-bottom-2">
           <section className="card background-grey">
             <header className="display-flex align-items-center justify-content-center">
-              <h2>Latest Videos</h2>
+              <h2 className="text-center">Latest Videos</h2>
               <SatelliteIcon width="30px" height="30px" />
             </header>
 
@@ -151,7 +156,7 @@ const IndexPage = ({
             style={{minHeight: '900px'}}
           >
             <header className="display-flex align-items-center justify-content-center">
-              <h2>Latest Tweets</h2>
+              <h2 className="text-center">Latest Tweets</h2>
               <SpeakerIcon width="30px" height="30px" />
             </header>
             <div className="twitter-embed"></div>
@@ -179,7 +184,8 @@ IndexPage.defaultProps = {
   mixcloudUrl: process.env.GATSBY_MIXCLOUD_URL,
   twitchUrl: process.env.GATSBY_TWITCH_URL,
   discordUrl: process.env.GATSBY_DISCORD_URL,
-  facebookUrl: process.env.GATSBY_FACEBOOK_URL
+  facebookUrl: process.env.GATSBY_FACEBOOK_URL,
+  twitchHandle: process.env.GATSBY_TWITCH_HANDLE
 }
 
 export default IndexPage

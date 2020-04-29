@@ -17,9 +17,13 @@ const TwitchEmbed = ({channel}) => {
 
       const player = new window.Twitch.Player('twitch-player', options)
 
-      player.addEventListener(window.Twitch.Player.READY, () =>
+      player.addEventListener(window.Twitch.Player.READY, () => {
         setTwitchReady(true)
-      )
+
+        if (window.twttr) {
+          window.twttr.widgets.load()
+        }
+      })
 
       player.addEventListener(window.Twitch.Player.ONLINE, () =>
         setTwitchVisibility(true)

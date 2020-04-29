@@ -7,7 +7,7 @@ html {
     $background-top 50%,
     $background-bottom 100%
   );
-  font: normal normal 14px/1.4 Helvetica, Roboto, 'Segoe UI', Calibri,
+  font: normal normal 14px/1.4 Helvetica, Roboto, 'Segoe UI', Calibri, 
     sans-serif;
   margin: 0;
   overflow-x: hidden;
@@ -16,7 +16,6 @@ html {
 h2 {
   color: $white;
   margin: 0;
-  text-align: center;
   text-shadow: 3px 3px 2px $shadow-color;
 }
 
@@ -26,7 +25,7 @@ section {
   padding: 1rem;
 
   &.social-section {
-    margin: 2rem 0;
+    margin-bottom: 2rem;
   }
 
   header {

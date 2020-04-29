@@ -6,6 +6,7 @@ export const onRenderBody = ({setPostBodyComponents}) => {
       async
       src="https://platform.twitter.com/widgets.js"
       charset="utf-8"
-    ></script>
+    ></script>,
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
   ])
 }

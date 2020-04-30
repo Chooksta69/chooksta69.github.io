@@ -8,11 +8,20 @@
     color: $white;
     padding: 1rem;
 
+    &--attribution {
+      display: block;
+      font-size: 10px;
+    }
+
     &--contact {
       text-align: left;
 
-      @media only screen and (min-width: 48em) {
-        text-align: right;
+      svg {
+        padding-right: 0.5rem;
+
+        @media only screen and (max-width: 48em) {
+          display: none;
+        }
       }
     }
   }

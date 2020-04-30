@@ -37,11 +37,11 @@ const YouTubeVideo = ({title, id, thumbnail, published}) => (
             rel="noopener noreferrer"
             target="_blank"
           >
-            View on YouTube
+            Watch on YouTube
           </a>
           <span className="youtube-video__meta--spacer">|</span>
           <time className="youtube-video__meta--time" dateTime={published}>
-            {timeSince(published)}
+            Uploaded {timeSince(published)}
           </time>
         </div>
       </div>

@@ -19,10 +19,6 @@ const TwitchEmbed = ({channel}) => {
 
       player.addEventListener(window.Twitch.Player.READY, () => {
         setTwitchReady(true)
-
-        if (window.twttr) {
-          window.twttr.widgets.load()
-        }
       })
 
       player.addEventListener(window.Twitch.Player.ONLINE, () =>

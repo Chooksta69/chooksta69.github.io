@@ -135,7 +135,7 @@ const IndexPage = ({
 
         <TwitchEmbed channel={twitchHandle} />
 
-        <div className="small-6 extra-small-12 margin-bottom-2">
+        <div className="small-6 extra-small-12 margin-bottom-1">
           <section className="card background-grey">
             <header className="display-flex align-items-center justify-content-center">
               <h2 className="text-center">Latest Videos</h2>
@@ -148,7 +148,7 @@ const IndexPage = ({
           </section>
         </div>
 
-        <div className="small-6 extra-small-12 margin-bottom-2">
+        <div className="small-6 extra-small-12 margin-bottom-1">
           <section
             className="card background-grey"
             style={{minHeight: '900px'}}

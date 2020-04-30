@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "James Ives <iam@jamesiv.es> (https://jamesiv.es)",
   "dependencies": {
+    "gatsby-plugin-twitter": "^2.3.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
@@ -24,9 +25,9 @@
     "gatsby-plugin-sharp": "^2.5.6",
     "gatsby-source-filesystem": "^2.2.4",
     "gatsby-transformer-sharp": "^2.4.6",
-    "prop-types": "^15.7.2",
     "node-sass": "^4.13.1",
-    "prettier": "2.0.4"
+    "prettier": "2.0.4",
+    "prop-types": "^15.7.2"
   },
   "keywords": [
     "gatsby"

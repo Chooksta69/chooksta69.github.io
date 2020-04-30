@@ -10,13 +10,18 @@ module.exports = {
     image: '/images/meta.png'
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-twitter`
+    },
+    {
+      resolve: `gatsby-plugin-react-helmet`
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/static/images`,
-      },
+        path: `${__dirname}/static/images`
+      }
     },
     {
       resolve: `gatsby-transformer-sharp`

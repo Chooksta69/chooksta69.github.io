@@ -40,8 +40,8 @@ const TwitchEmbed = ({channel}) => {
     >
       <section className="social-section card background-grey">
         <header className="display-flex align-items-center justify-content-center">
-          <h2 className="text-center">Live on Twitch</h2>
-          <RecordingIcon width="40px" height="40px" />
+          <h2 className="text-center">Currently Live on Twitch</h2>
+          <RecordingIcon width="50px" height="50px" />
         </header>
         <div className="row">
           <div className="extra-small-12 small-8">

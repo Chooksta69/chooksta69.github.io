@@ -9,8 +9,19 @@
     padding: 1rem;
 
     &--attribution {
-      display: block;
       font-size: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+
+      img {
+        height: 18px;
+      }
+
+      a {
+        margin: 0 0.2rem;
+      }
     }
 
     &--contact {

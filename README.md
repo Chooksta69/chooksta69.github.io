@@ -8,7 +8,7 @@ To run the project locally you must have [Node](https://nodejs.org/en/) installe
 
 ### Updating Social Links
 
-All of the social links including contact information, is stored within the `.env.development` and `.env.production` files. To change the URL you must update it in both places and commit the changes to `dev`.
+All of the social links, including contact information, is stored within the `.env.development` and `.env.production` files. To change the URL you must update it in both places and commit the changes to `dev`.
 
 ## Deploying
 

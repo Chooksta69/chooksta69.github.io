@@ -24,6 +24,13 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `bigjim`,
+        path: `${__dirname}/static/bigjim`
+      }
+    },
+    {
       resolve: `gatsby-transformer-sharp`
     },
     {

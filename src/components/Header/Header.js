@@ -10,7 +10,7 @@ const Header = () => {
   const handleClick = () => {
     setClicks(clicks + 1)
 
-    if (clicks === 1) {
+    if (clicks === 5) {
       navigate('/bigjim')
     }
 

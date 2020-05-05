@@ -13,7 +13,6 @@ import YouTubeFeed from '@components/YouTubeFeed/YouTubeFeed'
 import YouTubeIcon from '@components/YouTubeIcon/YouTubeIcon'
 import YouTubeData from '@data/youtube.json'
 import Layout from '@templates/Layout/Layout'
-import Konami from 'konami'
 import React from 'react'
 
 const sharedIconProps = {

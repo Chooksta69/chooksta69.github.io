@@ -35,8 +35,6 @@ const IndexPage = ({
 }) => {
   if (typeof window !== 'undefined' && window.twttr) {
     window.twttr.widgets.load(document.querySelectorAll('.twitter-timeline')[0])
-
-    new Konami('https://djzwackery.com/bigjim')
   }
 
   return (

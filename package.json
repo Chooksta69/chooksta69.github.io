@@ -6,7 +6,6 @@
   "author": "James Ives <iam@jamesiv.es> (https://jamesiv.es)",
   "dependencies": {
     "gatsby-plugin-twitter": "^2.3.0",
-    "konami": "^1.6.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",

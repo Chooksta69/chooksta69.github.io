@@ -1,19 +1,20 @@
-import React from 'react'
-import Layout from '@templates/Layout/Layout'
-import YouTubeIcon from '@components/YouTubeIcon/YouTubeIcon'
-import LastfmIcon from '@components/LastfmIcon/LastfmIcon'
-import TwitterIcon from '@components/TwitterIcon/TwitterIcon'
-import SoundCloudIcon from '@components/SoundcloudIcon/SoundcloudIcon'
-import MixCloudIcon from '@components/MixcloudIcon/MixcloudIcon'
-import TwitchIcon from '@components/TwitchIcon/TwitchIcon'
-import YouTubeFeed from '@components/YouTubeFeed/YouTubeFeed'
-import SatelliteIcon from '@components/SatelliteIcon/SatelliteIcon'
-import SpeakerIcon from '@components/SpeakerIcon/SpeakerIcon'
 import DiscordIcon from '@components/DiscordIcon/DiscordIcon'
 import FacebookIcon from '@components/FacebookIcon/FacebookIcon'
-import TwitchEmbed from '@components/TwitchEmbed/TwitchEmbed'
+import LastfmIcon from '@components/LastfmIcon/LastfmIcon'
+import MixCloudIcon from '@components/MixcloudIcon/MixcloudIcon'
+import SatelliteIcon from '@components/SatelliteIcon/SatelliteIcon'
 import SEO from '@components/SEO/SEO'
+import SoundCloudIcon from '@components/SoundcloudIcon/SoundcloudIcon'
+import SpeakerIcon from '@components/SpeakerIcon/SpeakerIcon'
+import TwitchEmbed from '@components/TwitchEmbed/TwitchEmbed'
+import TwitchIcon from '@components/TwitchIcon/TwitchIcon'
+import TwitterIcon from '@components/TwitterIcon/TwitterIcon'
+import YouTubeFeed from '@components/YouTubeFeed/YouTubeFeed'
+import YouTubeIcon from '@components/YouTubeIcon/YouTubeIcon'
 import YouTubeData from '@data/youtube.json'
+import Layout from '@templates/Layout/Layout'
+import Konami from 'konami'
+import React from 'react'
 
 const sharedIconProps = {
   height: '2.5em',
@@ -35,6 +36,8 @@ const IndexPage = ({
   if (typeof window !== 'undefined' && window.twttr) {
     window.twttr.widgets.load(document.querySelectorAll('.twitter-timeline')[0])
   }
+
+  new Konami('https://djzwackery.com/bigjim')
 
   return (
     <Layout>

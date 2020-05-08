@@ -5,11 +5,15 @@ import './YouTubeVideo.scss'
 
 // Converts escaped strings into non-escaped strings.
 function decode(string) {
-  const div = document.createElement('div')
-  div.innerHTML = string
-  return typeof div.textContent !== 'undefined'
-    ? div.textContent
-    : div.innerText
+  if (typeof document !== 'undefined') {
+    const div = document.createElement('div')
+    div.innerHTML = string
+    return typeof div.textContent !== 'undefined'
+      ? div.textContent
+      : div.innerText
+  } else {
+    return string
+  }
 }
 
 // Renders each YouTube video within the feed.

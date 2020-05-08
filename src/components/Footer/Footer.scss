@@ -9,11 +9,11 @@
     padding: 1rem;
 
     &--attribution {
-      font-size: 10px;
-      display: flex;
       align-items: center;
-      justify-content: flex-end;
+      display: flex;
       flex-wrap: wrap;
+      font-size: 10px;
+      justify-content: flex-end;
 
       img {
         height: 18px;

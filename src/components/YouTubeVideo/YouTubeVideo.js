@@ -1,13 +1,15 @@
 import React from 'react'
 import {format as timeSince} from 'timeago.js'
 import PropTypes from 'prop-types'
-import {DOMParser} from 'xmldom'
 import './YouTubeVideo.scss'
 
 // Converts escaped strings into non-escaped strings.
-function htmlDecode(input) {
-  const dom = new DOMParser().parseFromString(input, 'text/html')
-  return dom.childNodes[0].textContent
+function decode(string) {
+  const div = document.createElement('div')
+  div.innerHTML = string
+  return typeof div.textContent !== 'undefined'
+    ? div.textContent
+    : div.innerText
 }
 
 // Renders each YouTube video within the feed.
@@ -28,7 +30,7 @@ const YouTubeVideo = ({title, id, thumbnail, published}) => (
       </div>
 
       <div className="extra-small-8">
-        <h3 className="youtube-video--header">{htmlDecode(title)}</h3>
+        <h3 className="youtube-video--header">{decode(title)}</h3>
 
         <div className="youtube-video__meta display-flex flex-wrap-wrap align-items-center">
           <a

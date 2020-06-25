@@ -51,7 +51,7 @@ const TwitchEmbed = ({channel}) => {
           <div className="extra-small-12 small-4 text-right">
             <iframe
               title="Twitch Chat"
-              src={`https://www.twitch.tv/embed/${channel}/chat`}
+              src={`https://www.twitch.tv/embed/${channel}/chat?parent=djzwackery.com`}
               frameBorder="0"
               scrolling="no"
               height="480px"

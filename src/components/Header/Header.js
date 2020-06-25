@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Logo from '@images/logo.png'
-import { navigate } from 'gatsby';
+import {navigate} from 'gatsby'
 import './Header.scss'
 
 // Renders the global header.
@@ -13,7 +13,6 @@ const Header = () => {
     if (clicks === 5) {
       navigate('/bigjim')
     }
-
   }
 
   return (

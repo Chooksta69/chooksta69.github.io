@@ -143,7 +143,13 @@ const IndexPage = ({
             </header>
 
             <YouTubeFeed
-              videos={YouTubeData && YouTubeData.items ? YouTubeData.items : []}
+              videos={
+                YouTubeData && YouTubeData.items
+                  ? YouTubeData.items.filter(
+                      item => item.id.kind === 'youtube#video'
+                    )
+                  : []
+              }
             />
           </section>
         </div>

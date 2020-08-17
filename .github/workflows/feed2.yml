@@ -1,0 +1,28 @@
+name: Refresh Feed (Second)
+on:
+  schedule:
+    - cron: 00 12 * * 0-6
+jobs:
+  refresh-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          ref: 'dev' 
+  
+      - name: Fetch API Data 📦
+        uses: JamesIves/fetch-api-data-action@releases/v1
+        with:
+          ENDPOINT: https://www.googleapis.com/youtube/v3/search?key=${{secrets.YOUTUBE_API_KEY}}&channelId=UCLIVVSFSj9kbYUJzGYIjiUg&part=snippet,id&order=date&maxResults=10
+          CONFIGURATION: '{ "method": "GET" }'
+          SAVE_NAME: youtube
+
+      - name: Build and Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: dev
+          FOLDER: fetch-api-data-action
+          TARGET_FOLDER: src/data

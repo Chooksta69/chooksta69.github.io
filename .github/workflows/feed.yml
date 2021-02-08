@@ -1,5 +1,6 @@
 name: Refresh Feed
 on:
+  workflow_dispatch:
   schedule:
     - cron: 00 00 * * 0-6
 jobs:

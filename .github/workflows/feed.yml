@@ -20,9 +20,8 @@ jobs:
           SAVE_NAME: youtube
 
       - name: Build and Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: dev
-          FOLDER: fetch-api-data-action
-          TARGET_FOLDER: src/data
+          branch: dev
+          folder: fetch-api-data-action
+          target-folder: src/data

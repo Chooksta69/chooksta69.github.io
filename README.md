@@ -1,6 +1,6 @@
 # DJ Zwackery
 
-Homepage of Australia based Happy Hardcore DJ, Zwackery. Written with [React](https://reactjs.org/) using [Gatsby](https://www.gatsbyjs.org/).
+Home of Australia based Happy Hardcore DJ, Zwackery. Written with [React](https://reactjs.org/) using [Gatsby](https://www.gatsbyjs.org/).
 
 ## Getting Started
 

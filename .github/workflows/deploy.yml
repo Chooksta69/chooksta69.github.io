@@ -20,9 +20,8 @@ jobs:
           npm run-script build
 
       - name: Build and Deploy Repo
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: master
-          FOLDER: 'public'
-          CLEAN: true
+          branch: master
+          folder: 'public'
+          clean: true

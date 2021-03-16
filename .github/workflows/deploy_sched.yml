@@ -1,0 +1,26 @@
+name: Deploy Schedule
+on:
+  schedule:
+    - cron: 00 00 * * 0-7
+jobs:  
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.19.0'
+
+      - name: Checkout
+        uses: actions/checkout@v1
+        
+      - name: Install
+        run: |
+          npm install
+          npm run-script build
+
+      - name: Build and Deploy Repo
+        uses: JamesIves/github-pages-deploy-action@releases/v4
+        with:
+          branch: master
+          folder: 'public'
+          clean: true

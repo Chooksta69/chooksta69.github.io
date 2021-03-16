@@ -19,7 +19,7 @@ const YouTubeFeed = ({videos}) => (
 )
 
 YouTubeFeed.propTypes = {
-  /** The video object. */
+  /** The video object */
   videos: PropTypes.arrayOf(PropTypes.object).isRequired
 }
 
